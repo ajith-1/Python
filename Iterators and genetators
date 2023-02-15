@@ -1,0 +1,36 @@
+# Genetators
+def sum (num):
+    for i in range(0,num):
+        yield (i+1)
+x=sum(20)
+print(next(x))   
+print (next(x))
+
+# While loop
+def sum(num):
+    i=0
+    while i<10:
+        yield i
+        i+=1
+x=sum(10)
+print(next(x))
+print(next(x))
+print(next(x))
+
+# while Loop True
+def sum(num):
+    i=0
+    while True:
+        yield i
+        i+=1
+x=sum()
+print(next(x))
+print(next(x))
+print(next(x))
+# ----------------
+
+# iterators
+
+li=[2,3,1,4,5,34,54,23,64]
+x=iter(li)
+print(next(x))
