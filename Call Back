@@ -1,0 +1,8 @@
+def greet(name,call):  #Parent function
+    print(name)
+    call()             #callback parameter
+
+def helo():                    #callback function
+    print("hello every one")
+    
+greet("Ajith",helo)             #calling parent function with parameter
