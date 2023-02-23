@@ -1,4 +1,4 @@
-# Genetators
+# Genetators -------used in function with loop(yeild keyword)
 def sum (num):
     for i in range(0,num):
         yield (i+1)
@@ -29,14 +29,14 @@ print(next(x))
 print(next(x))
 # ----------------
 
-# iterators with list,tuples
+# iterators with list,tuples---using iter(),next() function
 
 li=[2,3,1,4,5,34,54,23,64]
 x=iter(li)
 print(next(x))
 
 
-#iterators to Print infinity value
+#iterators to Print infinity value ------ By class method(__iter__,__next__)
 class Tokens:
     def __iter__(self):
         self.x=0          #initial value
@@ -48,7 +48,7 @@ class Tokens:
             return a
         else:
             raise StopIteration  #throwing Error
-b=iter(Tokens())
+b=iter(Tokens())     #calling class function
 print(next(b))
 print(next(b)) 
 print(next(b)) 
