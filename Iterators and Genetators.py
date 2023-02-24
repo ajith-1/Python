@@ -27,7 +27,6 @@ x=sum()
 print(next(x))
 print(next(x))
 print(next(x))
-# ----------------
 
 # iterators with list,tuples---using iter(),next() function
 
