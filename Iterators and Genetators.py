@@ -35,7 +35,7 @@ x=iter(li)
 print(next(x))
 
 
-#iterators to Print infinity value ------ By class method(__iter__,__next__)
+#iterators to Print infinity value( manually given max value) ------ By class method(__iter__,__next__,iter(),next() )
 class Tokens:
     def __iter__(self):
         self.x=0          #initial value
@@ -48,6 +48,25 @@ class Tokens:
         else:
             raise StopIteration  #throwing Error
 b=iter(Tokens())     #calling class function
+print(next(b))
+print(next(b)) 
+print(next(b)) 
+# Print value until the condition meet
+
+class Tokens:
+    def __init__(self,max):  #constructor function to define value of max
+        self.range=max
+    def __iter__(self):
+        self.x=0          #initial value
+        return self
+    def __next__(self):
+        if (self.x<=self.range):
+            a=self.x
+            self.a+=1    #increment
+            return a
+        else:
+            raise StopIteration  #throwing Error
+b=iter(Tokens(6))     #calling class function
 print(next(b))
 print(next(b)) 
 print(next(b)) 
