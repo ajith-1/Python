@@ -8,7 +8,7 @@ class Person:
 class Person1(Person):
     def __init__(self,name,age,city):
         self.city=city
-        super().__init__(self,name,age)    #inheretence value from parent class
+        super().__init__(name,age)    #inheretence value from parent class ( no self keyword)
             
       
 person1=Person1("Ajith",24,"Bangalore")     #calling function
