@@ -9,6 +9,16 @@ while(n>0):
     n=n//10  
 print("The reverse of the number:",reverse)  
 
+# Sum of digits
+sum = 0
+number = int(input("Enter an integer: "))
+while(number!=0):
+    digit = number%10
+    sum = sum+digit
+    number = number//10
+print("Sum of digits is: ", sum)
+
+
 # palindrom
 a=int(input("start : "))
 c=str(a)
