@@ -36,3 +36,12 @@ for i in range(a,b):
            break
     else:
         print(i,"prime")
+        
+# Average of numbers
+count=int(input("Enter the count : "))
+sum=0
+for i in range(0,count):
+    num=int(input("Enter number : "))
+    sum=sum+num
+    avg=sum/count
+print(avg)
